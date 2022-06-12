@@ -1,18 +1,16 @@
 .categories-item {
   display: flex;
-  text-align: left;
-  padding: 5px;
-  cursor: pointer;
+  padding: 5px 20px;
 }
 
 .categories-item__title {
   font-size: 1rem;
   color: #ff00ff;
   cursor: pointer;
-  margin-left: 20px;
 }
 
-.categories-item:hover {
+.categories-item__title:hover {
+  cursor: pointer;
   text-decoration: underline 1px #ff00ff;
 }
 
