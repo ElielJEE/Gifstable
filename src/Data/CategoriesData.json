@@ -1,0 +1,39 @@
+{
+  "categories":[
+    {
+      "id":0,
+      "address":"Cartoon",
+      "name":"Cartoons"
+    },
+    {
+      "id":1,
+      "address":"movies",
+      "name":"Movies"
+    },
+    {
+      "id":2,
+      "address":"series",
+      "name":"Series"
+    },
+    {
+      "id":3,
+      "address":"comedycentral",
+      "name":"Comedy Central"
+    },
+    {
+      "id":4,
+      "address":"memes",
+      "name":"Memes"
+    },
+    {
+      "id":5,
+      "address":"anime",
+      "name":"Anime"
+    },
+    {
+      "id":6,
+      "address":"vaporwave",
+      "name":"Vaporwave"
+    }
+  ]
+}

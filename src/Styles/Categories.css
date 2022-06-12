@@ -1,0 +1,23 @@
+.categories-item {
+  display: flex;
+  text-align: left;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.categories-item__title {
+  font-size: 1rem;
+  color: #ff00ff;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.categories-item:hover {
+  text-decoration: underline 1px #ff00ff;
+}
+
+.categories-container {
+  margin: 50px 0;
+  width: 15%;
+  height: 100vh;
+}

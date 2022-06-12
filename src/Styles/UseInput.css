@@ -1,0 +1,12 @@
+.search-class {
+  height: 35px;
+  border: solid 1px purple;
+  border-left: none;
+  outline: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #8000804d;
+  color: white;
+  width: 225px;
+  margin-right: 5%;
+}

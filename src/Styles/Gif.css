@@ -1,0 +1,52 @@
+.gif-container {
+  margin: 50px 16px 0 auto;
+  width: 75%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 16px 5px;
+}
+
+.gif {
+  color: #fff;
+  text-decoration: none;
+  max-width: 400px;
+  flex-basis: 300px;
+  flex-grow: 1;
+  cursor: pointer;
+  background-color: #1f2227;
+}
+
+
+.gif-canvas {
+  display: flex;
+  height: 200px;
+  max-width: 400px;
+  overflow: hidden;
+  flex-grow: 1;
+  flex-basis: 300px;
+}
+
+.gif-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform .2s ease;
+}
+
+.gif-title {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 2px 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 300px;
+}
+
+.gif-img:hover {
+  transform: scale(1.03);
+}
+
