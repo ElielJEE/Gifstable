@@ -15,6 +15,7 @@
 }
 
 .categories-container {
+  position: fixed;
   margin: 50px 0;
   width: 15%;
   height: 100vh;

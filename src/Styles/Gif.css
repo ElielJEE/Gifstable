@@ -1,12 +1,19 @@
-.gif-container {
+.gif-list-container {
   margin: 50px 16px 0 auto;
   width: 75%;
   min-height: 100vh;
+  
+}
+
+.gif-container {
+  padding: 5px 5px;
+}
+
+.gif-content {
   display: flex;
   justify-content: space-evenly;
   gap: 10px;
   flex-wrap: wrap;
-  padding: 16px 5px;
 }
 
 .gif {

@@ -18,7 +18,11 @@ export default function TGifs() {
   }, [setLoading]);
 
   return (
-    loading ? <Loader /> :
-      <GifContainer value={gifs} />
+    <div className="gif-list-container">
+      {
+        loading ? <Loader /> :
+          <GifContainer value={gifs} />
+      }
+    </div>
   )
 }
