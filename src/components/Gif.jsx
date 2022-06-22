@@ -6,11 +6,9 @@ export default function Gif({ id, url, title }) {
   return (
     <Link to={`/onegif/${id}`}>
       <div className="gif">
-        <div className="gif-canvas">
-          <img className='gif-img' src={url} alt={title} title={title} />
-        </div>
+        <img className='gif-img' src={url} alt={title} title={title} />
         <span className="gif-title">
-            {title}
+          {title}
         </span>
       </div>
     </Link>

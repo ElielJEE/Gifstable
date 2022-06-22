@@ -2,7 +2,6 @@
   margin: 50px 16px 0 auto;
   width: 75%;
   min-height: 100vh;
-  
 }
 
 .gif-container {
@@ -10,37 +9,31 @@
 }
 
 .gif-content {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 10px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(
+      250px,
+      1fr
+    )
+  );
+  gap: 16px;
 }
 
 .gif {
   color: #fff;
   text-decoration: none;
-  max-width: 400px;
-  flex-basis: 300px;
-  flex-grow: 1;
   cursor: pointer;
   background-color: #1f2227;
-}
-
-
-.gif-canvas {
-  display: flex;
-  height: 200px;
-  max-width: 400px;
-  overflow: hidden;
-  flex-grow: 1;
-  flex-basis: 300px;
+  height: auto;
+  width: 100%;
+  transition: transform .2s ease;
 }
 
 .gif-img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  transition: transform .2s ease;
 }
 
 .gif-title {
@@ -50,10 +43,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 300px;
+  width: 100%;
 }
 
-.gif-img:hover {
+.gif:hover {
   transform: scale(1.03);
 }
 

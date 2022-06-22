@@ -9,7 +9,7 @@ export default function NavBar() {
 
   return (
     <nav className='navbar'>
-      <div className="search-container">
+      <div className="navbar-container">
         <div className="page-logo__container">
           <h1 className="page-logo__name">
             GiphyFrees
