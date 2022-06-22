@@ -3,11 +3,11 @@ import CategoriesItem from './CategoriesItem'
 import CategoriesData from '../Data/CategoriesData.json'
 import '../Styles/Categories.css'
 
-export default function Categories() {
+export default function Categories({ className }) {
   const categories = CategoriesData.categories;
 
   return (
-    <div className="categories-container">
+    <div className={className}>
       {
         categories.map(({ id, address, name }) =>
           <CategoriesItem

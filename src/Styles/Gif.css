@@ -50,3 +50,9 @@
   transform: scale(1.03);
 }
 
+@media screen and (max-width: 600px) {
+  .gif-list-container {
+    width: 100%;
+    margin-left: 16px;
+  }
+}
