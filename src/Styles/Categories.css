@@ -21,7 +21,7 @@
   height: 100vh;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1040px) {
   .categories-container {
     display: none;
   }

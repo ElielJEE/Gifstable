@@ -13,7 +13,7 @@
   grid-template-columns: repeat(
     auto-fit,
     minmax(
-      250px,
+      200px,
       1fr
     )
   );
@@ -50,7 +50,7 @@
   transform: scale(1.03);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1040px) {
   .gif-list-container {
     width: 100%;
     margin-left: 16px;
