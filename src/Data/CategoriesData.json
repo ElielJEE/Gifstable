@@ -2,7 +2,7 @@
   "categories":[
     {
       "id":0,
-      "address":"Cartoon",
+      "address":"cartoons",
       "name":"Cartoons"
     },
     {
@@ -34,6 +34,11 @@
       "id":6,
       "address":"vaporwave",
       "name":"Vaporwave"
+    },
+    {
+      "id":7,
+      "address":"music",
+      "name":"Music"
     }
   ]
 }

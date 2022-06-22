@@ -3,6 +3,8 @@ import getGifs from '../Services/getGifs';
 import GifContainer from '../components/GifContainer';
 import Loader from '../components/Loader';
 import UseLoading from '../components/Hooks/UseLoading';
+import '../Styles/Gif.css'
+import Result from '../components/Result';
 
 export default function GifList({ params }) {
   const { keyword } = params
@@ -19,7 +21,14 @@ export default function GifList({ params }) {
   }, [keyword, setLoading]);
 
   return (
-    loading ? <Loader /> :
-      <GifContainer value={gifs} />
+    <div className="gif-list-container">
+      <Result 
+        results={keyword}
+      />
+      {
+        loading ? <Loader /> :
+          <GifContainer value={gifs} />
+      }
+    </div>
   )
 }

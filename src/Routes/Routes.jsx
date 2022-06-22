@@ -10,7 +10,9 @@ export default function Routes() {
   return (
     <Router>
       <NavBar />
-      <Categories />
+      <Categories 
+        className={"categories-container"}
+      />
       <Switch>
         <Route
           exact path='/'
