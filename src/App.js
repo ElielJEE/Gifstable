@@ -1,21 +1,16 @@
 import React from 'react';
 import './App.css';
 import Routes from './Routes/Routes';
-import { Context } from './components/Context/StaticContext';
+import { GifsContextProvider } from './components/Context/GifsContext';
 
 export default function App() {
   return (
-    <Context.Provider value={
-      {
-        name:'arnold',
-        booleanItem: true
-      }
-    }>
-      <div className="App">
-        <section className="App-content">
+    <div className="App">
+      <section className="App-content">
+        <GifsContextProvider>
           <Routes />
-        </section>
-      </div>
-    </Context.Provider>
+        </GifsContextProvider>
+      </section>
+    </div>
   );
 }
