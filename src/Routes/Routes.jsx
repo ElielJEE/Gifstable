@@ -11,7 +11,7 @@ export default function Routes() {
     <Router>
       <NavBar />
       <Categories 
-        className={"categories-container"}
+        className={"categories-container categories-menu__fixed"}
       />
       <Switch>
         <Route

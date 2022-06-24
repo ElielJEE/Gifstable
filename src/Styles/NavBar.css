@@ -20,6 +20,7 @@
 .page-logo__container {
   margin-right: auto;
   margin-left: 10%;
+  cursor: pointer;
 }
 
 .page-logo__name {
@@ -73,6 +74,7 @@
   transform: translateX(-340px);
   transition: transform 150ms ease-in-out;
   padding: 6px;
+  width: 330px;
 }
 
 .list-item {

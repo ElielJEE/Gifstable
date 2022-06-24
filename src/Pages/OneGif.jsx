@@ -5,8 +5,8 @@ import UseLoading from '../components/Hooks/UseLoading';
 import Loader from '../components/Loader';
 
 export default function OneGif({ params }) {
-  const [gif, setGif] = useState([])
   const { id } = params
+  const [gif, setGif] = useState([])
   const { loading, setLoading } = UseLoading();
 
   useEffect(() => {

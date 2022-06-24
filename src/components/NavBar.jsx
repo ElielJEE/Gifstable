@@ -4,6 +4,7 @@ import UseInput from './Hooks/UseInput';
 import { FiSearch, FiMenu } from 'react-icons/fi'
 import UseSearching from './Hooks/UseSearching';
 import Categories from './Categories'
+import { Link } from 'wouter';
 
 export default function NavBar() {
   const [menu, setMenu] = useState();
@@ -13,9 +14,11 @@ export default function NavBar() {
     <nav className='navbar'>
       <div className="navbar-container">
         <div className="page-logo__container">
-          <h1 className="page-logo__name">
-            GiphyFrees
-          </h1>
+          <Link to='/'>
+            <h1 className="page-logo__name">
+              GiphyFrees
+            </h1>
+          </Link>
         </div>
         <form onSubmit={handleSubmit} className="search-container">
           <div className="btn-container">
@@ -63,7 +66,7 @@ export default function NavBar() {
             </li>
             <li className="list-item">
               <Categories
-                className={"categories-container__dropdown-menu"}
+                className={"categories-container__dropdown-menu categories-dropdown"}
               />
             </li>
           </ul>
