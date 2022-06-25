@@ -71,9 +71,34 @@
       "name":"Animals"
     },
     {
-      "id":6,
+      "id":14,
       "address":"love",
       "name":"Love"
+    },
+    {
+      "id":15,
+      "address":"horror",
+      "name":"Horror"
+    },
+    {
+      "id":16,
+      "address":"sports",
+      "name":"Sports"
+    },
+    {
+      "id":17,
+      "address":"technology",
+      "name":"Technology"
+    },
+    {
+      "id":18,
+      "address":"coding",
+      "name":"Coding"
+    },
+    {
+      "id":19,
+      "address":"weapons",
+      "name":"Weapons"
     }
   ]
 }

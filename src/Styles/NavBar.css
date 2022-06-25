@@ -4,13 +4,14 @@
 }
 
 .navbar {
-  position: fixed;
-  background-color: #1f2227;
+  position: sticky;
+  background-color: #1B0021;
   width: 100%;
   height: 50px;
   left: 0;
   padding: 7px;
   z-index: 1;
+  top: 0;
 }
 
 .navbar-container {

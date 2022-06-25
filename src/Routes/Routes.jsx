@@ -9,10 +9,6 @@ import TGifs from '../Pages/TGifs';
 export default function Routes() {
   return (
     <Router>
-      <NavBar />
-      <Categories 
-        className={"categories-container categories-menu__fixed"}
-      />
       <Switch>
         <Route
           exact path='/'

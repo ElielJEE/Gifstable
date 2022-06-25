@@ -7,7 +7,7 @@ export default function Categories({ className }) {
   const categories = CategoriesData.categories;
 
   return (
-    <div className={className}>
+    <div className="categories-container">
       {
         categories.map(({ id, address, name }) =>
           <CategoriesItem
