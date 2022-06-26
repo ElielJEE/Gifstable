@@ -32,79 +32,27 @@
 
 .search-container {
   display: flex;
-  margin-right: 2%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .btn-container {
   height: 35px;
-  width: 30px;
+  width: max-content;
   display: flex;
 }
 
 .btn-search {
   border: solid 1px purple;
   border-right: none;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
   height: 35px;
-  width: 30px;
-  background-color: #8000804d;
+  background-color: purple;
   cursor: pointer;
 }
 
 .btn-search__title {
-  font-size: 15px;
+  font-size: 1.1rem;
   color: white;
-}
-
-.dropdown-menu__container {
-  display: none;
-}
-
-.menu-icon__container {
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.dropdown-menu__list {
-  position: absolute;
-  background-color: #1f2227;
-  margin: 0;
-  top: 50px;
-  left: 0;
-  transform: translateX(-340px);
-  transition: transform 150ms ease-in-out;
-  padding: 6px;
-  width: 330px;
-}
-
-.list-item {
-  list-style: none;
-}
-
-.search-container__dropdown-menu {
-  display: flex;
-}
-
-.active-dropdown {
-  transform: translateX(0);
-}
-
-@media screen and (max-width: 1040px) {
-  .navbar-container {
-    flex-direction: row-reverse;
-  }
-
-  .search-container {
-    display: none;
-  }
-
-  .page-logo__container {
-    margin-right: 2%;
-    margin-left: auto;
-  }
-
-  .dropdown-menu__container {
-    display: flex;
-  }
 }

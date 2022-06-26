@@ -7,13 +7,13 @@ export default function NavBar() {
   const { handleSubmit, handleChange } = UseSearching();
 
   return (
-    <nav className='navbar'>
+    <section className='navbar'>
       <div className="navbar-container">
         <form onSubmit={handleSubmit} className="search-container">
           <div className="btn-container">
             <button className="btn-search">
               <span className="btn-search__title">
-                Buscar
+                Search
               </span>
             </button>
           </div>
@@ -22,11 +22,11 @@ export default function NavBar() {
             id={'search-id'}
             className={'search-class'}
             name={'q'}
-            placeHolder={'Search'}
+            placeHolder={'Search for gifs...'}
             func={handleChange}
           />
         </form>
       </div>
-    </nav>
+    </section>
   )
 }

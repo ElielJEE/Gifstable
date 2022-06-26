@@ -12,7 +12,6 @@ export default function UseSearching() {
 
   const handleChange = e => {
     setKeyword(e.target.value)
-    pushLocation(`/gif/${keyword}`)
   }
 
   return { handleSubmit, handleChange }
