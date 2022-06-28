@@ -1,11 +1,15 @@
 .gif-list-container {
-  margin: 50px 16px 0 auto;
-  width: 75%;
+  width: 100%;
   min-height: 100vh;
 }
 
 .gif-container {
-  padding: 5px 5px;
+  padding: 6px;
+}
+
+.result-title {
+  text-align: left;
+  margin: 0.5rem 0;
 }
 
 .gif-content {
@@ -17,42 +21,123 @@
       1fr
     )
   );
-  gap: 16px;
+  grid-auto-rows: 250px;
+  grid-auto-flow: dense;
+  gap: 6px;
 }
 
 .gif {
+  position: relative;
   color: #fff;
   text-decoration: none;
   cursor: pointer;
   background-color: #1f2227;
-  height: auto;
+  transition: all .2s ease;
+  overflow: hidden;
   width: 100%;
-  transition: transform .2s ease;
+  height: 100%;
 }
 
 .gif-img {
   width: 100%;
-  height: 200px;
+  height: inherit;
   object-fit: cover;
+  vertical-align: bottom;
 }
 
 .gif-title {
-  display: inline-block;
-  font-size: 1rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: left;
+  background-color: #1f2227c4;
   padding: 2px 5px;
+  font-size: 0.9rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
 }
 
-.gif:hover {
-  transform: scale(1.03);
+.gif:nth-child(5n + 1) .gif-img {
+  background-color: lightblue;
+}
+.gif:nth-child(5n + 2) .gif-img {
+  background-color: lightgreen;
+}
+.gif:nth-child(5n + 3) .gif-img {
+  background-color: orange;
+}
+.gif:nth-child(5n + 4) .gif-img {
+  background-color: yellow;
+}
+.gif:nth-child(5n + 5) .gif-img {
+  background-color: violet;
+}
+
+.gif:hover:nth-child(5n + 1) {
+  box-shadow: 0 0 0 6px lightblue;
+}
+.gif:hover:nth-child(5n + 2) {
+  box-shadow: 0 0 0 6px lightgreen;
+}
+.gif:hover:nth-child(5n + 3) {
+  box-shadow: 0 0 0 6px orange;
+}
+.gif:hover:nth-child(5n + 4) {
+  box-shadow: 0 0 0 6px yellow;
+}
+.gif:hover:nth-child(5n + 5) {
+  box-shadow: 0 0 0 6px violet;
+}
+
+.gif:hover:nth-child(5n + 1) .gif-title {
+	background-color: #add8e6c4;
+	color: #1f2227;
+}
+.gif:hover:nth-child(5n + 2) .gif-title {
+	background-color: #90ee90c4;
+	color: #1f2227;
+}
+.gif:hover:nth-child(5n + 3) .gif-title {
+	background-color: #ffa500c4;
+	color: #1f2227;
+}
+.gif:hover:nth-child(5n + 4) .gif-title {
+	background-color: #ffff00c4;
+	color: #1f2227;
+}
+.gif:hover:nth-child(5n + 5) .gif-title {
+	background-color: #ee82eec4;
+	color: #1f2227;
+}
+
+.gif:nth-child(11n + 1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gif:nth-child(8n+1) {
+	grid-column-end: span 2;
+	grid-row-end: span 2;
+}
+
+.gif:nth-child(10n + 3) {
+	grid-column: span 2;
+	grid-row: span 1;
 }
 
 @media screen and (max-width: 1040px) {
   .gif-list-container {
     width: 100%;
     margin-left: 16px;
+  }
+}
+
+@media screen and (max-width: 45rem)
+{
+  .gif:nth-child(10n + 3) {
+    grid-column: span 1;
+    grid-row: span 1;
   }
 }

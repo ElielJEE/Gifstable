@@ -12,33 +12,93 @@
     },
     {
       "id":2,
-      "address":"series",
-      "name":"Series"
-    },
-    {
-      "id":3,
       "address":"comedycentral",
       "name":"Comedy Central"
     },
     {
-      "id":4,
+      "id":3,
       "address":"memes",
       "name":"Memes"
     },
     {
-      "id":5,
+      "id":4,
       "address":"anime",
       "name":"Anime"
     },
     {
-      "id":6,
+      "id":5,
       "address":"vaporwave",
       "name":"Vaporwave"
     },
     {
-      "id":7,
+      "id":6,
       "address":"music",
       "name":"Music"
+    },
+    {
+      "id":7,
+      "address":"space",
+      "name":"Space"
+    },
+    {
+      "id":8,
+      "address":"marvel",
+      "name":"Marvel"
+    },
+    {
+      "id":9,
+      "address":"dccomics",
+      "name":"DC Comics"
+    },
+    {
+      "id":10,
+      "address":"cars",
+      "name":"Cars"
+    },
+    {
+      "id":11,
+      "address":"landscape",
+      "name":"Landscape"
+    },
+    {
+      "id":12,
+      "address":"aesthetic",
+      "name":"Aesthetic"
+    },
+    {
+      "id":13,
+      "address":"animals",
+      "name":"Animals"
+    },
+    {
+      "id":14,
+      "address":"love",
+      "name":"Love"
+    },
+    {
+      "id":15,
+      "address":"horror",
+      "name":"Horror"
+    },
+    {
+      "id":16,
+      "address":"sports",
+      "name":"Sports"
+    },
+    {
+      "id":17,
+      "address":"technology",
+      "name":"Technology"
+    },
+    {
+      "id":18,
+      "address":"coding",
+      "name":"Coding"
+    },
+    {
+      "id":19,
+      "address":"weapons",
+      "name":"Weapons"
     }
   ]
 }

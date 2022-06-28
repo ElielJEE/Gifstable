@@ -1,24 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import TrendingGif from '../Services/TrendingGif';
+import React from 'react';
 import GifContainer from '../components/GifContainer';
 import Loader from '../components/Loader';
-import UseLoading from '../components/Hooks/UseLoading'
+import UseGifs from '../components/Hooks/UseGifs'
 
 export default function TGifs() {
-  const [gifs, setGifs] = useState([])
-  const { loading, setLoading } = UseLoading();
-
-  useEffect(() => {
-    setLoading(true)
-    TrendingGif()
-      .then(gifs => {
-        setGifs(gifs)
-        setLoading(false)
-      })
-  }, [setLoading]);
+  const { loading, gifs } = UseGifs()
 
   return (
     <div className="gif-list-container">
+      <h3 className='result-title'>Trending</h3>
       {
         loading ? <Loader /> :
           <GifContainer value={gifs} />

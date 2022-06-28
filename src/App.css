@@ -1,5 +1,9 @@
+@font-face {
+  font-family: Poppins;
+  src: url(./Fonts/Poppins/Poppins-Regular.ttf);
+}
+
 .App {
-  position: relative;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -12,10 +16,62 @@
 }
 
 .App-content {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  background-color: #1B0021;
+  min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: white;
-  width: 95%;
+  width: 100%;
+}
+
+.app-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.app-categories__container {
+  position: sticky;
+  top: 50px;
+  z-index: 1;
+  width: 100%;
+  background-color: #1B0021;
+}
+
+.app-categorie {
+  margin: 0 auto;
+  padding: 6px;
+  width: 97%;
+  /* overflow: hidden; */
+}
+
+.logo-name {
+  font-size: 3.5rem;
+  font-family: Poppins;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-items {
+  display: flex;
+  gap: 16px;
+  margin-right: 30px;
+}
+
+.navbar__item {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar__item:hover:nth-child(2n + 1) {
+  color: lightblue;
+}
+
+.navbar__item:hover:nth-child(2n + 2) {
+  color: lightgreen;
 }
