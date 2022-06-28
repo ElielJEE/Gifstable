@@ -26,8 +26,10 @@ export default function App() {
           </header>
           <Search />
           <div className='app-item'>
-            <div className='app-categorie'>
-              <Categories />
+            <div className='app-categories__container'>
+              <div className='app-categorie'>
+                <Categories />
+              </div>
             </div>
             <Routes />
           </div>

@@ -29,15 +29,22 @@
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
+  align-items: center;
+}
+
+.app-categories__container {
+  position: sticky;
+  top: 50px;
+  z-index: 1;
+  width: 100%;
+  background-color: #1B0021;
 }
 
 .app-categorie {
-  position: sticky;
-  top: 50px;
-  overflow: hidden;
-  z-index: 1;
+  margin: 0 auto;
   padding: 6px;
-  background-color: #1B0021;
+  width: 97%;
+  /* overflow: hidden; */
 }
 
 .logo-name {
